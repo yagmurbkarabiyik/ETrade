@@ -12,5 +12,9 @@ namespace ETrade.Domain.Entities
         public string Name { get; set; }
         public int Stock { get; set; }
         public long Price { get; set; }
+
+        //many to many relationship with orders
+        public ICollection<Order> Orders { get; set; }
+
     }
 }

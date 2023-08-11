@@ -1,0 +1,17 @@
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\bin\Debug\net6.0\ETrade.Infrastructure.deps.json
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\bin\Debug\net6.0\ETrade.Infrastructure.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\bin\Debug\net6.0\ETrade.Infrastructure.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\bin\Debug\net6.0\ETrade.Application.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\bin\Debug\net6.0\ETrade.Domain.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\bin\Debug\net6.0\ETrade.Application.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\bin\Debug\net6.0\ETrade.Domain.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\obj\Debug\net6.0\ETrade.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\obj\Debug\net6.0\ETrade.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\obj\Debug\net6.0\ETrade.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\obj\Debug\net6.0\ETrade.Infrastructure.AssemblyInfo.cs
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\obj\Debug\net6.0\ETrade.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\obj\Debug\net6.0\ETrade.Infrastructure.csproj.CopyComplete
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\obj\Debug\net6.0\ETrade.Infrastructure.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\obj\Debug\net6.0\refint\ETrade.Infrastructure.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\obj\Debug\net6.0\ETrade.Infrastructure.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Infrastructure\obj\Debug\net6.0\ref\ETrade.Infrastructure.dll
