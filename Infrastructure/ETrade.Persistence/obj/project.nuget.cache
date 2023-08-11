@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "P05NXnDufVWHEZRWbpiG1nkdbKUmgOWp9pSzEFfl41ZBttb7s7xgJSUS5uFQg3UB7ZN9y+H0Ps3gy0wewRVeAw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Infrastructure\\ETrade.Persistence\\ETrade.Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

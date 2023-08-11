@@ -1,0 +1,12 @@
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\bin\Debug\net6.0\ETrade.Domain.deps.json
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\bin\Debug\net6.0\ETrade.Domain.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\bin\Debug\net6.0\ETrade.Domain.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\obj\Debug\net6.0\ETrade.Domain.csproj.AssemblyReference.cache
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\obj\Debug\net6.0\ETrade.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\obj\Debug\net6.0\ETrade.Domain.AssemblyInfoInputs.cache
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\obj\Debug\net6.0\ETrade.Domain.AssemblyInfo.cs
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\obj\Debug\net6.0\ETrade.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\obj\Debug\net6.0\ETrade.Domain.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\obj\Debug\net6.0\refint\ETrade.Domain.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\obj\Debug\net6.0\ETrade.Domain.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Core\ETrade.Domain\obj\Debug\net6.0\ref\ETrade.Domain.dll

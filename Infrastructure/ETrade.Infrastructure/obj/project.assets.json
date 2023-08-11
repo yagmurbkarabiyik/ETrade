@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "ETrade.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ETrade.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ETrade.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ETrade.Application.dll": {}
+        }
+      },
+      "ETrade.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ETrade.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ETrade.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ETrade.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/ETrade.Application/ETrade.Application.csproj",
+      "msbuildProject": "../../Core/ETrade.Application/ETrade.Application.csproj"
+    },
+    "ETrade.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Core/ETrade.Domain/ETrade.Domain.csproj",
+      "msbuildProject": "../../Core/ETrade.Domain/ETrade.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "ETrade.Application >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ygmr4\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Infrastructure\\ETrade.Infrastructure\\ETrade.Infrastructure.csproj",
+      "projectName": "ETrade.Infrastructure",
+      "projectPath": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Infrastructure\\ETrade.Infrastructure\\ETrade.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\ygmr4\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Infrastructure\\ETrade.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ygmr4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Core\\ETrade.Application\\ETrade.Application.csproj": {
+              "projectPath": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Core\\ETrade.Application\\ETrade.Application.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

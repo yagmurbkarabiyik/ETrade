@@ -1,0 +1,17 @@
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\bin\Debug\net6.0\ETrade.Persistence.deps.json
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\bin\Debug\net6.0\ETrade.Persistence.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\bin\Debug\net6.0\ETrade.Persistence.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\bin\Debug\net6.0\ETrade.Application.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\bin\Debug\net6.0\ETrade.Domain.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\bin\Debug\net6.0\ETrade.Application.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\bin\Debug\net6.0\ETrade.Domain.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\obj\Debug\net6.0\ETrade.Persistence.csproj.AssemblyReference.cache
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\obj\Debug\net6.0\ETrade.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\obj\Debug\net6.0\ETrade.Persistence.AssemblyInfoInputs.cache
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\obj\Debug\net6.0\ETrade.Persistence.AssemblyInfo.cs
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\obj\Debug\net6.0\ETrade.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\obj\Debug\net6.0\ETrade.Persistence.csproj.CopyComplete
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\obj\Debug\net6.0\ETrade.Persistence.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\obj\Debug\net6.0\refint\ETrade.Persistence.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\obj\Debug\net6.0\ETrade.Persistence.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Infrastructure\ETrade.Persistence\obj\Debug\net6.0\ref\ETrade.Persistence.dll
