@@ -20,14 +20,18 @@ namespace ETrade.API.Controllers
         [HttpGet]
         public async Task Get()
         {
-            await _productWriteRepository.AddRangeAsync(new()
-            {
-                new() {Id = Guid.NewGuid(), Name = "Laptop", Price = 10000, CreatedDate = DateTime.UtcNow, Stock =10 },
-                new() {Id = Guid.NewGuid(), Name = "Mouse", Price = 500, CreatedDate = DateTime.UtcNow, Stock =20 },
-                new() {Id = Guid.NewGuid(), Name = "Klavye", Price = 2000, CreatedDate = DateTime.UtcNow, Stock =30 }
-            });
+            //await _productWriteRepository.AddRangeAsync(new()
+            //{
+            //    new() {Id = Guid.NewGuid(), Name = "Laptop", Price = 10000, CreatedDate = DateTime.UtcNow, Stock =10 },
+            //    new() {Id = Guid.NewGuid(), Name = "Mouse", Price = 500, CreatedDate = DateTime.UtcNow, Stock =20 },
+            //    new() {Id = Guid.NewGuid(), Name = "Klavye", Price = 2000, CreatedDate = DateTime.UtcNow, Stock =30 }
+            //});
 
-            var count = await _productWriteRepository.SaveAsync();
+            //var count = await _productWriteRepository.SaveAsync();
+
+            Product p = await _productReadRepository.GetByIdAsync("038a9d17-f0da-4876-9a6f-420928bd776f", false);
+            p.Name = "Yağmur";
+            _productWriteRepository.SaveAsync();
         }
 
         [HttpGet("{id}")]
