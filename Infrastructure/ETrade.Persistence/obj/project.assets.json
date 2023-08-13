@@ -531,7 +531,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "ETrade.Domain": "1.0.0"
+          "ETrade.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.3"
         },
         "compile": {
           "bin/placeholder/ETrade.Application.dll": {}

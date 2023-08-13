@@ -320,7 +320,8 @@
       },
       "ETrade.Application/1.0.0": {
         "dependencies": {
-          "ETrade.Domain": "1.0.0"
+          "ETrade.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.3"
         },
         "runtime": {
           "ETrade.Application.dll": {}

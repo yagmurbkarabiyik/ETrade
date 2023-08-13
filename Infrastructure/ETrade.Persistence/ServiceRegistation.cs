@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using ETrade.Application.Repositories;
+using ETrade.Persistence.Repositories;
 
 namespace ETrade.Persistence
 {
@@ -17,6 +19,15 @@ namespace ETrade.Persistence
             string connectionString = configuration.GetConnectionString("PostgreSQL");
 
             services.AddDbContext<ETradeDbContext>(options => options.UseNpgsql(connectionString));
+
+            services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
+            services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
+
+            services.AddScoped<IOrderReadRepository, OrderReadRepository>();
+            services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
+
+            services.AddScoped<IProductReadRepository, ProductReadRepository>();
+            services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
         }
     }
 }
