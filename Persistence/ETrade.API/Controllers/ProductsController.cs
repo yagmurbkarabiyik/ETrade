@@ -11,34 +11,52 @@ namespace ETrade.API.Controllers
     {
         private readonly IProductWriteRepository _productWriteRepository;
         private readonly IProductReadRepository _productReadRepository;
-        public ProductsController(IProductWriteRepository productWriteRepository,IProductReadRepository productReadRepository)
+
+        private readonly IOrderWriteRepository _orderWriteRepository;
+        private readonly IOrderReadRepository _orderReadRepository;
+
+        private readonly ICustomerWriteRepository _customerWriteRepository;
+        public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IOrderReadRepository orderReadRepository, IOrderWriteRepository orderWriteRepository, ICustomerWriteRepository customerWriteRepository)
         {
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
+            _orderWriteRepository = orderWriteRepository;
+            _customerWriteRepository = customerWriteRepository;
+            _orderReadRepository = orderReadRepository;
         }
+
+        //[HttpGet]
+        //public async Task Get()
+        //{
+        //    await _productWriteRepository.AddAsync(new() { Name = "C Product", Price = 1.500F, Stock = 45, CreatedDate = DateTime.UtcNow });
+        //    await _productWriteRepository.SaveAsync();
+
+        //    var customerId = Guid.NewGuid();
+        //    await _customerWriteRepository.AddAsync(new() { Id = customerId, Name = "Yağmur" });
+        //    await _orderWriteRepository.AddAsync(new() { Description = "Test 1", Address = "Çankaya / Ankara", CustomerId = customerId });
+        //    await _orderWriteRepository.AddAsync(new() { Description = "Test 2", Address = "Pursaklar / Ankara", CustomerId = customerId });
+
+        //    await _orderWriteRepository.SaveAsync();
+
+        //    Order order = await _orderReadRepository.GetByIdAsync("2269a190-5cfe-498c-8753-c234e2ad40e6");
+        //    order.Address = "asdf";
+        //    await _orderWriteRepository.SaveAsync();
+
+
+        //}
+
 
         [HttpGet]
-        public async Task Get()
+        public async Task<IActionResult> Get()
         {
-            //await _productWriteRepository.AddRangeAsync(new()
-            //{
-            //    new() {Id = Guid.NewGuid(), Name = "Laptop", Price = 10000, CreatedDate = DateTime.UtcNow, Stock =10 },
-            //    new() {Id = Guid.NewGuid(), Name = "Mouse", Price = 500, CreatedDate = DateTime.UtcNow, Stock =20 },
-            //    new() {Id = Guid.NewGuid(), Name = "Klavye", Price = 2000, CreatedDate = DateTime.UtcNow, Stock =30 }
-            //});
-
-            //var count = await _productWriteRepository.SaveAsync();
-
-            Product p = await _productReadRepository.GetByIdAsync("038a9d17-f0da-4876-9a6f-420928bd776f", false);
-            p.Name = "Yağmur";
-            _productWriteRepository.SaveAsync();
+            return Ok("Merhaba!");
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(string id)
-        {
-            Product product = await  _productReadRepository.GetByIdAsync(id); 
-            return Ok(product);
-        }
+        //[HttpGet("{id}")]
+        //public async Task<IActionResult> Get(string id)
+        //{
+        //    Product product = await  _productReadRepository.GetByIdAsync(id); 
+        //    return Ok(product);
+        //}
     }
 }
