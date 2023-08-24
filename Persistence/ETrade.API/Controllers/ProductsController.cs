@@ -1,7 +1,9 @@
 ﻿using ETrade.Application.Repositories;
+using ETrade.Application.ViewModels.Products;
 using ETrade.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace ETrade.API.Controllers
 {
@@ -12,51 +14,60 @@ namespace ETrade.API.Controllers
         private readonly IProductWriteRepository _productWriteRepository;
         private readonly IProductReadRepository _productReadRepository;
 
-        private readonly IOrderWriteRepository _orderWriteRepository;
-        private readonly IOrderReadRepository _orderReadRepository;
 
-        private readonly ICustomerWriteRepository _customerWriteRepository;
-        public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IOrderReadRepository orderReadRepository, IOrderWriteRepository orderWriteRepository, ICustomerWriteRepository customerWriteRepository)
+        public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
         {
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
-            _orderWriteRepository = orderWriteRepository;
-            _customerWriteRepository = customerWriteRepository;
-            _orderReadRepository = orderReadRepository;
+
         }
-
-        //[HttpGet]
-        //public async Task Get()
-        //{
-        //    await _productWriteRepository.AddAsync(new() { Name = "C Product", Price = 1.500F, Stock = 45, CreatedDate = DateTime.UtcNow });
-        //    await _productWriteRepository.SaveAsync();
-
-        //    var customerId = Guid.NewGuid();
-        //    await _customerWriteRepository.AddAsync(new() { Id = customerId, Name = "Yağmur" });
-        //    await _orderWriteRepository.AddAsync(new() { Description = "Test 1", Address = "Çankaya / Ankara", CustomerId = customerId });
-        //    await _orderWriteRepository.AddAsync(new() { Description = "Test 2", Address = "Pursaklar / Ankara", CustomerId = customerId });
-
-        //    await _orderWriteRepository.SaveAsync();
-
-        //    Order order = await _orderReadRepository.GetByIdAsync("2269a190-5cfe-498c-8753-c234e2ad40e6");
-        //    order.Address = "asdf";
-        //    await _orderWriteRepository.SaveAsync();
-
-
-        //}
-
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok("Merhaba!");
+            return Ok(_productReadRepository.GetAll());
         }
 
-        //[HttpGet("{id}")]
-        //public async Task<IActionResult> Get(string id)
-        //{
-        //    Product product = await  _productReadRepository.GetByIdAsync(id); 
-        //    return Ok(product);
-        //}
+        [HttpGet]
+        public async Task<IActionResult> Get(string id)
+        {
+            return Ok(  _productReadRepository.GetAll(false));
+        }
+        [HttpPost]
+        //model => dış dünyadan gelecek olan veriyi kesinlikle entity türünden bir veriyle karşılamamalıyız
+        public async Task<IActionResult> Post(VM_Create_Product model)
+        {
+           await _productWriteRepository.AddAsync(new()
+            {
+                Name = model.Name,  
+                Price = model.Price,    
+                Stock= model.Stock
+            });
+            await _productWriteRepository.SaveAsync();
+            //return Ok();
+            return StatusCode((int)HttpStatusCode.Created);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(VM_Update_Product model)
+        {
+           Product product = await _productReadRepository.GetByIdAsync(model.Id);
+            
+            product.Name = model.Name; 
+            product.Price = model.Price; 
+            product.Stock = model.Stock;
+
+           await _productWriteRepository.SaveAsync();
+           return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            await _productWriteRepository.RemoveAsync(id);
+            await _productWriteRepository.SaveAsync();
+
+            return Ok();
+        }
     }
 }
