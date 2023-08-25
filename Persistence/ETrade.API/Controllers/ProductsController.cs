@@ -1,4 +1,5 @@
 ﻿using ETrade.Application.Repositories;
+using ETrade.Application.RequestParameters;
 using ETrade.Application.ViewModels.Products;
 using ETrade.Domain.Entities;
 using Microsoft.AspNetCore.Http;
@@ -23,9 +24,25 @@ namespace ETrade.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery]Pagination pagination)
         {
-            return Ok(_productReadRepository.GetAll());
+            var totalCount = _productReadRepository.GetAll().Count();
+            var products = _productReadRepository.GetAll(false).Skip(pagination.Page * pagination.Size).Take(pagination.Size)
+                            .Select(p => new
+            {
+                p.Id,
+                p.Name,
+                p.Stock,
+                p.Price,
+                p.CreatedDate,
+                p.UpdatedDate
+            }).ToList();
+
+            return Ok( new
+            {
+                totalCount,
+                products
+            });
         }
 
         [HttpGet("{id}")]
@@ -37,7 +54,6 @@ namespace ETrade.API.Controllers
         //model => dış dünyadan gelecek olan veriyi kesinlikle entity türünden bir veriyle karşılamamalıyız
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
-            if (ModelState.IsValid) { }
            await _productWriteRepository.AddAsync(new()
             {
                 Name = model.Name,  
