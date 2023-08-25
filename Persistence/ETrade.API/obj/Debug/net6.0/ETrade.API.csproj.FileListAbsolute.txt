@@ -55,3 +55,8 @@ C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\run
 C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\ETrade.Infrastructure.dll
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\ETrade.Infrastructure.pdb

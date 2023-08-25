@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/rddVUAUGD/WQm/rpEqzarqaVZXM2P8P1EYUQGdHb5sqVllVSN0K69IKmrdxZYOYSAHBqv6z3/7Bq6xfRncuqA==",
+  "dgSpecHash": "ox93VvmdwUyqQQv1YX/eP/KEp05fcngqR0nF/xOFWDPqwRWtqOycxRiBDYVngIqYrJSfP53raoUW03e1xX33/A==",
   "success": true,
   "projectFilePath": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Core\\ETrade.Application\\ETrade.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ygmr4\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.3\\microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.3\\microsoft.entityframeworkcore.analyzers.6.0.3.nupkg.sha512",

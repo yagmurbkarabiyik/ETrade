@@ -28,7 +28,7 @@ namespace ETrade.API.Controllers
             return Ok(_productReadRepository.GetAll());
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)
         {
             return Ok(  _productReadRepository.GetAll(false));
@@ -37,6 +37,7 @@ namespace ETrade.API.Controllers
         //model => dış dünyadan gelecek olan veriyi kesinlikle entity türünden bir veriyle karşılamamalıyız
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
+            if (ModelState.IsValid) { }
            await _productWriteRepository.AddAsync(new()
             {
                 Name = model.Name,  

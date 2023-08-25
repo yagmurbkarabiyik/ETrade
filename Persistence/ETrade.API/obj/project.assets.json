@@ -2,6 +2,56 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FluentValidation/10.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/10.4.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.4.0",
+          "FluentValidation.DependencyInjectionExtensions": "10.4.0"
+        },
+        "compile": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/10.4.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.4.0",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -607,6 +657,9 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "ETrade.Domain": "1.0.0",
+          "FluentValidation": "10.4.0",
+          "FluentValidation.AspNetCore": "10.4.0",
+          "FluentValidation.DependencyInjectionExtensions": "10.4.0",
           "Microsoft.EntityFrameworkCore": "6.0.3"
         },
         "compile": {
@@ -624,6 +677,19 @@
         },
         "runtime": {
           "bin/placeholder/ETrade.Domain.dll": {}
+        }
+      },
+      "ETrade.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ETrade.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ETrade.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ETrade.Infrastructure.dll": {}
         }
       },
       "ETrade.Persistence/1.0.0": {
@@ -647,6 +713,63 @@
     }
   },
   "libraries": {
+    "FluentValidation/10.4.0": {
+      "sha512": "rVI1b5L3pq3layrRKIo3N7AT3PWey8ocPZhf6zeHYf6LBBvnP1KzW3bm7KmeazOWW8m1KXMD+shfviIcKSgQ0g==",
+      "type": "package",
+      "path": "fluentvalidation/10.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.4.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/10.4.0": {
+      "sha512": "CF/YkJ+ls/Y76ZTZtQ6Ye9rfRM4TcAL6R8c4q8dDRQzS0/6hL+PG/Vssht3ha/wFMoBd0kiosC7JFxbtWBTccg==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/10.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net5.0/FluentValidation.AspNetCore.xml",
+        "lib/net6.0/FluentValidation.AspNetCore.dll",
+        "lib/net6.0/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/10.4.0": {
+      "sha512": "25LzRDm9Chfyw4aPMsoE+3qkz1x2evb2/537hUcnqkhA9zpREfQYm8y1JF1LCMdcH57q5QAZ27X7dqVOcN6TOA==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/10.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -1433,6 +1556,11 @@
       "path": "../../Core/ETrade.Domain/ETrade.Domain.csproj",
       "msbuildProject": "../../Core/ETrade.Domain/ETrade.Domain.csproj"
     },
+    "ETrade.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/ETrade.Infrastructure/ETrade.Infrastructure.csproj",
+      "msbuildProject": "../../Infrastructure/ETrade.Infrastructure/ETrade.Infrastructure.csproj"
+    },
     "ETrade.Persistence/1.0.0": {
       "type": "project",
       "path": "../../Infrastructure/ETrade.Persistence/ETrade.Persistence.csproj",
@@ -1442,6 +1570,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "ETrade.Application >= 1.0.0",
+      "ETrade.Infrastructure >= 1.0.0",
       "ETrade.Persistence >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.3",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -1476,6 +1605,9 @@
           "projectReferences": {
             "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Core\\ETrade.Application\\ETrade.Application.csproj": {
               "projectPath": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Core\\ETrade.Application\\ETrade.Application.csproj"
+            },
+            "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Infrastructure\\ETrade.Infrastructure\\ETrade.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Infrastructure\\ETrade.Infrastructure\\ETrade.Infrastructure.csproj"
             },
             "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Infrastructure\\ETrade.Persistence\\ETrade.Persistence.csproj": {
               "projectPath": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Infrastructure\\ETrade.Persistence\\ETrade.Persistence.csproj"

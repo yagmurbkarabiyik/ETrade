@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BLRVv45wUCASarZveNGwqksl2BNSstRtjmTK82r5NuXlOqixEmbh5+GO5CtOW6dVV3OLWy+w9pUP374uDEuNbw==",
+  "dgSpecHash": "5cN+nQDyXhomxnk2jou0LHdbmN8YOd2lGg/HH0iKSMKxEmvj86D8dcOLcw9vnwhGp6eTs1wHjxqBnQOpYSSfoQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Infrastructure\\ETrade.Persistence\\ETrade.Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ygmr4\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.3\\microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512",
