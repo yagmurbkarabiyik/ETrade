@@ -28,6 +28,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//for wwwroot files
+app.UseStaticFiles();   
+
 app.UseHttpsRedirection();
 
 //use cors policy

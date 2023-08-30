@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "GIz9nle/q83XStuAgQtJ8S+DoTQ1yFVenFQzn0Yi+eQ=",
+  "Hash": "UJhbpZ7bfhOHcVZILv55cb9nx3N08lQz1Dd1ip3+LPU=",
   "Source": "ETrade.API",
   "BasePath": "_content/ETrade.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ETrade.API\\wwwroot",
+      "Source": "ETrade.API",
+      "ContentRoot": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Persistence\\ETrade.API\\wwwroot\\",
+      "BasePath": "_content/ETrade.API",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

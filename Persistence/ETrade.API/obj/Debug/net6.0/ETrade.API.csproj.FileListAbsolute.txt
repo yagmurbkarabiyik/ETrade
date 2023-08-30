@@ -60,3 +60,4 @@ C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\Flu
 C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\ETrade.Infrastructure.dll
 C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\ETrade.Infrastructure.pdb
+C:\Users\ygmr4\Desktop\ETrade\ETrade\Persistence\ETrade.API\bin\Debug\net6.0\ETrade.API.staticwebassets.runtime.json
