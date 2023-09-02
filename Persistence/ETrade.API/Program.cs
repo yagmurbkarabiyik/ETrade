@@ -1,4 +1,5 @@
 using ETrade.Application.Validators.Products;
+using ETrade.Infrastructure;
 using ETrade.Infrastructure.Filters;
 using ETrade.Persistence;
 using FluentValidation.AspNetCore;
@@ -6,6 +7,7 @@ using FluentValidation.AspNetCore;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPersistenceServices(builder.Configuration);
+builder.Services.AddInfrastructureServices();
 
 //add cors policy
 
