@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jcq995NOr1606qD+onQAvpgAFGHBjrRxPJS46bXTMXc=",
+  "Hash": "UJhbpZ7bfhOHcVZILv55cb9nx3N08lQz1Dd1ip3+LPU=",
   "Source": "ETrade.API",
   "BasePath": "_content/ETrade.API",
   "Mode": "Default",
@@ -15,23 +15,5 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Persistence\\ETrade.API\\wwwroot\\resources\\product-images\\89589206 .JPG",
-      "SourceId": "ETrade.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ygmr4\\Desktop\\ETrade\\ETrade\\Persistence\\ETrade.API\\wwwroot\\",
-      "BasePath": "_content/ETrade.API",
-      "RelativePath": "resources/product-images/89589206 .JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resources\\product-images\\89589206 .JPG"
-    }
-  ]
+  "Assets": []
 }
