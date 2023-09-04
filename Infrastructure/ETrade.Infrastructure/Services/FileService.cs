@@ -88,7 +88,7 @@ namespace ETrade.Infrastructure.Services
 
                         else
                         {
-                                                    newFileName = $"{Path.GetFileNameWithoutExtension(newFileName)}-2{extension}";
+                         newFileName = $"{Path.GetFileNameWithoutExtension(newFileName)}-2{extension}";
 
                         }
                     }

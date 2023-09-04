@@ -10,6 +10,7 @@ namespace ETrade.Domain.Entities.Common
     {
         public Guid Id { get; set; }
         public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set;}
+        //file dosyasında updated date olmaması için virtual tanımlayıp file classında override => not mapped sayesinde orada kullanılmayacak!
+        virtual public DateTime UpdatedDate { get; set;}
     }
 }
