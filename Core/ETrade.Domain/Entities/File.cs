@@ -10,6 +10,8 @@ namespace ETrade.Domain.Entities
 {
     public class File : BaseEntity
     {
+        public string FileName { get; set; }
+        public string Path { get; set; }
         //updated date eklenmemesi için
         [NotMapped]
         public override DateTime UpdatedDate { get => base.UpdatedDate; set => base.UpdatedDate = value; }
