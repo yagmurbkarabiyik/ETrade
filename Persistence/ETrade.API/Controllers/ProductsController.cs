@@ -1,9 +1,9 @@
 ﻿using ETrade.Application;
 using ETrade.Application.Repositories;
 using ETrade.Application.RequestParameters;
-using ETrade.Application.Services;
 using ETrade.Application.ViewModels.Products;
 using ETrade.Domain.Entities;
+using ETrade.Infrastructure.Services.Storage;
 using ETrade.Persistence.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +19,6 @@ namespace ETrade.API.Controllers
         private readonly IProductReadRepository _productReadRepository;
 
         private readonly IWebHostEnvironment _webHostEnvironment;
-        private readonly IFileService _fileService;
 
         private readonly IFileWriteRepository _fileWriteRepository;
         private readonly IFileReadRepository _fileReadRepository;
@@ -30,22 +29,22 @@ namespace ETrade.API.Controllers
         private readonly IInvoiceFileReadRepository _invoiceFileReadRepository;
         private readonly IInvoiceFileWriteRepository _invoiceWriteRepository;
 
+        private readonly IStorageService _storageService;
         public ProductsController(IProductWriteRepository productWriteRepository,
             IProductReadRepository productReadRepository,
             IWebHostEnvironment webHostEnvironment,
-            IFileService fileService,
             IFileReadRepository fileReadRepository,
             IFileWriteRepository fileWriteRepository,
             IProductImageFileWriteRepository productImageFileWriteRepository
 ,
             IProductImageFileReadRepository productImageFileReadRepository,
             IInvoiceFileReadRepository invoiceFileReadRepository,
-            IInvoiceFileWriteRepository invoiceWriteRepository)
+            IInvoiceFileWriteRepository invoiceWriteRepository,
+            IStorageService storageService)
         {
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
             _webHostEnvironment = webHostEnvironment;
-            _fileService = fileService;
 
             _fileReadRepository = fileReadRepository;
             _fileWriteRepository = fileWriteRepository;
@@ -55,6 +54,7 @@ namespace ETrade.API.Controllers
 
             _invoiceFileReadRepository = invoiceFileReadRepository;
             _invoiceWriteRepository = invoiceWriteRepository;
+            _storageService = storageService;
         }
 
         [HttpGet]
@@ -127,14 +127,15 @@ namespace ETrade.API.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Upload()
         {
-            var datas = await _fileService.UploadAsync("resources/product-images", Request.Form.Files);
-            //    _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile()
-            //    {
-            //        FileName = d.fileName,
-            //        Path = d.path
-            //    }).ToList()); ;
-
-            //    await _productImageFileWriteRepository.SaveAsync();
+            var datas = await _storageService.UploadAsync("resource/files", Request.Form.Files);
+            // var datas = await _fileService.UploadAsync("resources/product-images", Request.Form.Files);
+            _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile()
+            {
+                FileName = d.fileName,
+                Path = d.pathOrContainerName,
+                Storage = _storageService.StorageName
+            }).ToList());
+              await _productImageFileWriteRepository.SaveAsync();
 
             
             

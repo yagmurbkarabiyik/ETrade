@@ -11,6 +11,7 @@ namespace ETicaretAPI.Infrastructure.Services.Storage.Local
         {
             _webHostEnvironment = webHostEnvironment;
         }
+
         public async Task DeleteAsync(string path, string fileName)
             => File.Delete($"{path}\\{fileName}");
 
@@ -22,6 +23,7 @@ namespace ETicaretAPI.Infrastructure.Services.Storage.Local
 
         public bool HasFile(string path, string fileName)
             => File.Exists($"{path}\\{fileName}");
+
         async Task<bool> CopyFileAsync(string path, IFormFile file)
         {
             try
@@ -45,13 +47,13 @@ namespace ETicaretAPI.Infrastructure.Services.Storage.Local
                 Directory.CreateDirectory(uploadPath);
 
             List<(string fileName, string path)> datas = new();
-            //foreach (IFormFile file in files)
-            //{
-            //    //string fileNewName = await FileRenameAsync(path, file.Name, HasFile);
+                //foreach (IFormFile file in files)
+                //{
+                //    string fileNewName = await FileRenameAsync(path, file.Name, HasFile);
 
-            //    await CopyFileAsync($"{uploadPath}\\{fileNewName}", file);
-            //    datas.Add((fileNewName, $"{path}\\{fileNewName}"));
-            //}
+                //    await CopyFileAsync($"{uploadPath}\\{fileNewName}", file);
+                //    datas.Add((fileNewName, $"{path}\\{fileNewName}"));
+                //}
 
             return datas;
         }

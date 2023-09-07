@@ -1,3 +1,4 @@
+using ETicaretAPI.Infrastructure.Services.Storage.Local;
 using ETrade.Application.Validators.Products;
 using ETrade.Infrastructure;
 using ETrade.Infrastructure.Filters;
@@ -8,9 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddInfrastructureServices();
+builder.Services.AddStorage<LocalStorage>();
 
 //add cors policy
-
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
     policy.WithOrigins("http://localhost:4200", "https://localhost:4200").AllowAnyHeader().AllowAnyMethod()
 ));
